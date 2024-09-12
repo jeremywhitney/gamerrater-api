@@ -1,0 +1,218 @@
+[
+  {
+    "model": "raterapi.review",
+    "pk": 1,
+    "fields": {
+      "player": 1,
+      "game": 1,
+      "rating": 8,
+      "review_text": "Fantastic game with an engaging storyline.",
+      "created_at": "2024-09-12T12:00:00Z",
+      "updated_at": "2024-09-12T12:00:00Z"
+    }
+  },
+  {
+    "model": "raterapi.review",
+    "pk": 2,
+    "fields": {
+      "player": 1,
+      "game": 2,
+      "rating": 7,
+      "review_text": "Good mechanics but could use more polish.",
+      "created_at": "2024-09-12T12:15:00Z",
+      "updated_at": "2024-09-12T12:15:00Z"
+    }
+  },
+  {
+    "model": "raterapi.review",
+    "pk": 3,
+    "fields": {
+      "player": 2,
+      "game": 3,
+      "rating": 9,
+      "review_text": "Excellent graphics and gameplay. Highly recommend!",
+      "created_at": "2024-09-12T12:30:00Z",
+      "updated_at": "2024-09-12T12:30:00Z"
+    }
+  },
+  {
+    "model": "raterapi.review",
+    "pk": 4,
+    "fields": {
+      "player": 2,
+      "game": 4,
+      "rating": 6,
+      "review_text": "Enjoyable but has some repetitive elements.",
+      "created_at": "2024-09-12T12:45:00Z",
+      "updated_at": "2024-09-12T12:45:00Z"
+    }
+  },
+  {
+    "model": "raterapi.review",
+    "pk": 5,
+    "fields": {
+      "player": 3,
+      "game": 5,
+      "rating": 5,
+      "review_text": "Average game with minimal innovation.",
+      "created_at": "2024-09-12T13:00:00Z",
+      "updated_at": "2024-09-12T13:00:00Z"
+    }
+  },
+  {
+    "model": "raterapi.review",
+    "pk": 6,
+    "fields": {
+      "player": 3,
+      "game": 6,
+      "rating": 9,
+      "review_text": "Amazing experience with a rich narrative.",
+      "created_at": "2024-09-12T13:15:00Z",
+      "updated_at": "2024-09-12T13:15:00Z"
+    }
+  },
+  {
+    "model": "raterapi.review",
+    "pk": 7,
+    "fields": {
+      "player": 4,
+      "game": 7,
+      "rating": 7,
+      "review_text": "Great multiplayer aspects but lacking in single-player content.",
+      "created_at": "2024-09-12T13:30:00Z",
+      "updated_at": "2024-09-12T13:30:00Z"
+    }
+  },
+  {
+    "model": "raterapi.review",
+    "pk": 8,
+    "fields": {
+      "player": 4,
+      "game": 8,
+      "rating": 8,
+      "review_text": "Well-designed and fun, though it has some bugs.",
+      "created_at": "2024-09-12T13:45:00Z",
+      "updated_at": "2024-09-12T13:45:00Z"
+    }
+  },
+  {
+    "model": "raterapi.review",
+    "pk": 9,
+    "fields": {
+      "player": 5,
+      "game": 9,
+      "rating": 6,
+      "review_text": "Decent game but doesn't stand out in its genre.",
+      "created_at": "2024-09-12T14:00:00Z",
+      "updated_at": "2024-09-12T14:00:00Z"
+    }
+  },
+  {
+    "model": "raterapi.review",
+    "pk": 10,
+    "fields": {
+      "player": 5,
+      "game": 10,
+      "rating": 10,
+      "review_text": "Absolutely fantastic game from start to finish!",
+      "created_at": "2024-09-12T14:15:00Z",
+      "updated_at": "2024-09-12T14:15:00Z"
+    }
+  },
+  {
+    "model": "raterapi.review",
+    "pk": 11,
+    "fields": {
+      "player": 6,
+      "game": 11,
+      "rating": 8,
+      "review_text": "Solid game with great replay value.",
+      "created_at": "2024-09-12T14:30:00Z",
+      "updated_at": "2024-09-12T14:30:00Z"
+    }
+  },
+  {
+    "model": "raterapi.review",
+    "pk": 12,
+    "fields": {
+      "player": 6,
+      "game": 12,
+      "rating": 7,
+      "review_text": "Good game but could use more content.",
+      "created_at": "2024-09-12T14:45:00Z",
+      "updated_at": "2024-09-12T14:45:00Z"
+    }
+  },
+  {
+    "model": "raterapi.review",
+    "pk": 13,
+    "fields": {
+      "player": 1,
+      "game": 13,
+      "rating": 9,
+      "review_text": "Highly recommended for fans of the genre.",
+      "created_at": "2024-09-12T15:00:00Z",
+      "updated_at": "2024-09-12T15:00:00Z"
+    }
+  },
+  {
+    "model": "raterapi.review",
+    "pk": 14,
+    "fields": {
+      "player": 2,
+      "game": 1,
+      "rating": 8,
+      "review_text": "Great action-packed game!",
+      "created_at": "2024-09-12T15:15:00Z",
+      "updated_at": "2024-09-12T15:15:00Z"
+    }
+  },
+  {
+    "model": "raterapi.review",
+    "pk": 15,
+    "fields": {
+      "player": 3,
+      "game": 2,
+      "rating": 7,
+      "review_text": "Entertaining but not groundbreaking.",
+      "created_at": "2024-09-12T15:30:00Z",
+      "updated_at": "2024-09-12T15:30:00Z"
+    }
+  },
+  {
+    "model": "raterapi.review",
+    "pk": 16,
+    "fields": {
+      "player": 4,
+      "game": 3,
+      "rating": 6,
+      "review_text": "Interesting concept but execution falls short.",
+      "created_at": "2024-09-12T15:45:00Z",
+      "updated_at": "2024-09-12T15:45:00Z"
+    }
+  },
+  {
+    "model": "raterapi.review",
+    "pk": 17,
+    "fields": {
+      "player": 5,
+      "game": 4,
+      "rating": 7,
+      "review_text": "Solid game but needs more polish.",
+      "created_at": "2024-09-12T16:00:00Z",
+      "updated_at": "2024-09-12T16:00:00Z"
+    }
+  },
+  {
+    "model": "raterapi.review",
+    "pk": 18,
+    "fields": {
+      "player": 6,
+      "game": 5,
+      "rating": 9,
+      "review_text": "An excellent title with few flaws.",
+      "created_at": "2024-09-12T16:15:00Z",
+      "updated_at": "2024-09-12T16:15:00Z"
+    }
+  }
+]
