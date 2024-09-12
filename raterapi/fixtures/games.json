@@ -1,0 +1,197 @@
+[
+  {
+    "model": "raterapi.game",
+    "pk": 1,
+    "fields": {
+      "title": "The Legend of Zelda: Breath of the Wild",
+      "description": "An open-world action-adventure game set in the land of Hyrule.",
+      "designer": "Eiji Aonuma",
+      "year_released": 2017,
+      "number_of_players": 1,
+      "estimated_time_to_play": 50,
+      "age_recommendation": "E"
+    }
+  },
+  {
+    "model": "raterapi.game",
+    "pk": 2,
+    "fields": {
+      "title": "The Witcher 3: Wild Hunt",
+      "description": "An action RPG set in a fantasy world with a rich story and deep gameplay.",
+      "designer": "CD Projekt Red",
+      "year_released": 2015,
+      "number_of_players": 1,
+      "estimated_time_to_play": 60,
+      "age_recommendation": "M"
+    }
+  },
+  {
+    "model": "raterapi.game",
+    "pk": 3,
+    "fields": {
+      "title": "Minecraft",
+      "description": "A sandbox game that allows players to build and explore virtual worlds made of blocks.",
+      "designer": "Markus Persson",
+      "year_released": 2011,
+      "number_of_players": 1,
+      "estimated_time_to_play": 30,
+      "age_recommendation": "E"
+    }
+  },
+  {
+    "model": "raterapi.game",
+    "pk": 4,
+    "fields": {
+      "title": "Red Dead Redemption 2",
+      "description": "An action-adventure game set in the late 1800s American frontier.",
+      "designer": "Rockstar Games",
+      "year_released": 2018,
+      "number_of_players": 1,
+      "estimated_time_to_play": 70,
+      "age_recommendation": "M"
+    }
+  },
+  {
+    "model": "raterapi.game",
+    "pk": 5,
+    "fields": {
+      "title": "God of War (2018)",
+      "description": "An action-adventure game that follows Kratos and his son as they navigate the world of Norse mythology.",
+      "designer": "Santa Monica Studio",
+      "year_released": 2018,
+      "number_of_players": 1,
+      "estimated_time_to_play": 40,
+      "age_recommendation": "M"
+    }
+  },
+  {
+    "model": "raterapi.game",
+    "pk": 6,
+    "fields": {
+      "title": "Among Us",
+      "description": "A multiplayer party game where players work together to complete tasks and find an imposter.",
+      "designer": "Innersloth",
+      "year_released": 2018,
+      "number_of_players": 4,
+      "estimated_time_to_play": 15,
+      "age_recommendation": "E"
+    }
+  },
+  {
+    "model": "raterapi.game",
+    "pk": 7,
+    "fields": {
+      "title": "Hades",
+      "description": "A rogue-like dungeon crawler set in the Greek underworld.",
+      "designer": "Supergiant Games",
+      "year_released": 2020,
+      "number_of_players": 1,
+      "estimated_time_to_play": 30,
+      "age_recommendation": "M"
+    }
+  },
+  {
+    "model": "raterapi.game",
+    "pk": 8,
+    "fields": {
+      "title": "Animal Crossing: New Horizons",
+      "description": "A life simulation game where players develop and customize their own island paradise.",
+      "designer": "Nintendo",
+      "year_released": 2020,
+      "number_of_players": 1,
+      "estimated_time_to_play": 20,
+      "age_recommendation": "E"
+    }
+  },
+  {
+    "model": "raterapi.game",
+    "pk": 9,
+    "fields": {
+      "title": "Fall Guys: Ultimate Knockout",
+      "description": "A battle royale game where players compete in a series of chaotic mini-games.",
+      "designer": "Mediatonic",
+      "year_released": 2020,
+      "number_of_players": 60,
+      "estimated_time_to_play": 20,
+      "age_recommendation": "E"
+    }
+  },
+  {
+    "model": "raterapi.game",
+    "pk": 10,
+    "fields": {
+      "title": "Overwatch",
+      "description": "A team-based shooter with a diverse cast of characters and abilities.",
+      "designer": "Blizzard Entertainment",
+      "year_released": 2016,
+      "number_of_players": 6,
+      "estimated_time_to_play": 30,
+      "age_recommendation": "T"
+    }
+  },
+  {
+    "model": "raterapi.game",
+    "pk": 11,
+    "fields": {
+      "title": "Sekiro: Shadows Die Twice",
+      "description": "An action-adventure game set in Sengoku-era Japan with challenging combat.",
+      "designer": "FromSoftware",
+      "year_released": 2019,
+      "number_of_players": 1,
+      "estimated_time_to_play": 40,
+      "age_recommendation": "M"
+    }
+  },
+  {
+    "model": "raterapi.game",
+    "pk": 12,
+    "fields": {
+      "title": "Death Stranding",
+      "description": "An open-world game with a focus on exploration and connecting isolated communities.",
+      "designer": "Kojima Productions",
+      "year_released": 2019,
+      "number_of_players": 1,
+      "estimated_time_to_play": 50,
+      "age_recommendation": "M"
+    }
+  },
+  {
+    "model": "raterapi.game",
+    "pk": 13,
+    "fields": {
+      "title": "Persona 5",
+      "description": "A JRPG that combines dungeon crawling with life simulation elements.",
+      "designer": "Atlus",
+      "year_released": 2016,
+      "number_of_players": 1,
+      "estimated_time_to_play": 100,
+      "age_recommendation": "M"
+    }
+  },
+  {
+    "model": "raterapi.game",
+    "pk": 14,
+    "fields": {
+      "title": "The Last of Us Part II",
+      "description": "An action-adventure game with a strong narrative set in a post-apocalyptic world.",
+      "designer": "Naughty Dog",
+      "year_released": 2020,
+      "number_of_players": 1,
+      "estimated_time_to_play": 50,
+      "age_recommendation": "M"
+    }
+  },
+  {
+    "model": "raterapi.game",
+    "pk": 15,
+    "fields": {
+      "title": "Celeste",
+      "description": "A platformer that challenges players with tight controls and a touching story.",
+      "designer": "Maddy Makes Games",
+      "year_released": 2018,
+      "number_of_players": 1,
+      "estimated_time_to_play": 15,
+      "age_recommendation": "E"
+    }
+  }
+]
