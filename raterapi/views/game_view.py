@@ -15,7 +15,7 @@ class GameView(ViewSet):
             Response -- JSON serialized instance
         """
         game = Game()
-        game.user = request.auth.user
+        game.created_by = request.auth.user
         game.title = request.data["title"]
         game.description = request.data["description"]
         game.designer = request.data["designer"]
@@ -49,20 +49,40 @@ class GameView(ViewSet):
         """Handle PUT requests
 
         Returns:
-            Response -- Empty body with 204 status code
+            Response -- JSON serialized updated instance or error
         """
         try:
-            void = Void.objects.get(pk=pk)
-            void.sample_name = request.data["name"]
-            void.sample_description = request.data["description"]
-            void.save()
-        except Void.DoesNotExist:
-            return Response(None, status=status.HTTP_404_NOT_FOUND)
+            game = Game.objects.get(pk=pk)
+
+            if request.auth.user != game.created_by:
+                return Response(
+                    {"detail": "You do not have permission to edit this game."},
+                    status=status.HTTP_403_FORBIDDEN,
+                )
+
+            game.title = request.data["title"]
+            game.description = request.data["description"]
+            game.designer = request.data["designer"]
+            game.year_released = request.data["year_released"]
+            game.number_of_players = request.data["number_of_players"]
+            game.estimated_time_to_play = request.data["estimated_time_to_play"]
+            game.age_recommendation = request.data["age_recommendation"]
+
+            game.save()
+
+            if "categories" in request.data:
+                game.categories.set(request.data["categories"])
+
+            serializer = GameSerializer(game)
+            return Response(serializer.data, status=status.HTTP_200_OK)
+
+        except Game.DoesNotExist:
+            return Response(
+                {"detail": "Game not found."}, status=status.HTTP_404_NOT_FOUND
+            )
 
         except Exception as ex:
-            return HttpResponseServerError(ex)
-
-        return Response(None, status=status.HTTP_204_NO_CONTENT)
+            return Response({"reason": str(ex)}, status=status.HTTP_400_BAD_REQUEST)
 
     def destroy(self, request, pk=None):
         """Handle DELETE requests for a single item
@@ -71,11 +91,11 @@ class GameView(ViewSet):
             Response -- 200, 404, or 500 status code
         """
         try:
-            void = Void.objects.get(pk=pk)
-            void.delete()
+            game = Game.objects.get(pk=pk)
+            game.delete()
             return Response(None, status=status.HTTP_204_NO_CONTENT)
 
-        except Void.DoesNotExist as ex:
+        except Game.DoesNotExist as ex:
             return Response({"message": ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
 
         except Exception as ex:
@@ -90,8 +110,8 @@ class GameView(ViewSet):
             Response -- JSON serialized array
         """
         try:
-            voids = Void.objects.all()
-            serializer = VoidSerializer(voids, many=True)
+            games = Game.objects.all()
+            serializer = GameSerializer(games, many=True)
             return Response(serializer.data, status=status.HTTP_200_OK)
         except Exception as ex:
             return HttpResponseServerError(ex)
@@ -100,19 +120,26 @@ class GameView(ViewSet):
 class GameCreatorSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ("first_name", "last_name")
+        fields = (
+            "id",
+            "first_name",
+            "last_name",
+        )
 
 
 class GameCategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
-        fields = ("name",)
+        fields = (
+            "id",
+            "name",
+        )
 
 
 class GameSerializer(serializers.ModelSerializer):
     """JSON serializer"""
 
-    user = GameCreatorSerializer(many=False, required=False)
+    created_by = GameCreatorSerializer(many=False)
     categories = GameCategorySerializer(many=True)
 
     class Meta:
@@ -126,6 +153,6 @@ class GameSerializer(serializers.ModelSerializer):
             "number_of_players",
             "estimated_time_to_play",
             "age_recommendation",
-            "user",
+            "created_by",
             "categories",
         )
