@@ -11,3 +11,4 @@ python3 manage.py loaddata games
 python3 manage.py loaddata categories
 python3 manage.py loaddata game_categories
 python3 manage.py loaddata reviews
+python3 manage.py loaddata ratings
