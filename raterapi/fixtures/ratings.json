@@ -1,0 +1,202 @@
+[
+  {
+    "model": "raterapi.rating",
+    "pk": 1,
+    "fields": { "player": 1, "game": 1, "rating": 7 }
+  },
+  {
+    "model": "raterapi.rating",
+    "pk": 2,
+    "fields": { "player": 2, "game": 1, "rating": 8 }
+  },
+  {
+    "model": "raterapi.rating",
+    "pk": 3,
+    "fields": { "player": 3, "game": 1, "rating": 6 }
+  },
+  {
+    "model": "raterapi.rating",
+    "pk": 4,
+    "fields": { "player": 4, "game": 1, "rating": 5 }
+  },
+
+  {
+    "model": "raterapi.rating",
+    "pk": 5,
+    "fields": { "player": 1, "game": 2, "rating": 9 }
+  },
+  {
+    "model": "raterapi.rating",
+    "pk": 6,
+    "fields": { "player": 2, "game": 2, "rating": 8 }
+  },
+  {
+    "model": "raterapi.rating",
+    "pk": 7,
+    "fields": { "player": 3, "game": 2, "rating": 7 }
+  },
+
+  {
+    "model": "raterapi.rating",
+    "pk": 8,
+    "fields": { "player": 1, "game": 3, "rating": 6 }
+  },
+  {
+    "model": "raterapi.rating",
+    "pk": 9,
+    "fields": { "player": 4, "game": 3, "rating": 8 }
+  },
+  {
+    "model": "raterapi.rating",
+    "pk": 10,
+    "fields": { "player": 5, "game": 3, "rating": 7 }
+  },
+
+  {
+    "model": "raterapi.rating",
+    "pk": 11,
+    "fields": { "player": 2, "game": 4, "rating": 9 }
+  },
+  {
+    "model": "raterapi.rating",
+    "pk": 12,
+    "fields": { "player": 6, "game": 4, "rating": 7 }
+  },
+
+  {
+    "model": "raterapi.rating",
+    "pk": 13,
+    "fields": { "player": 3, "game": 5, "rating": 6 }
+  },
+  {
+    "model": "raterapi.rating",
+    "pk": 14,
+    "fields": { "player": 2, "game": 5, "rating": 8 }
+  },
+
+  {
+    "model": "raterapi.rating",
+    "pk": 15,
+    "fields": { "player": 3, "game": 6, "rating": 9 }
+  },
+  {
+    "model": "raterapi.rating",
+    "pk": 16,
+    "fields": { "player": 1, "game": 6, "rating": 7 }
+  },
+
+  {
+    "model": "raterapi.rating",
+    "pk": 17,
+    "fields": { "player": 2, "game": 7, "rating": 8 }
+  },
+  {
+    "model": "raterapi.rating",
+    "pk": 18,
+    "fields": { "player": 3, "game": 7, "rating": 6 }
+  },
+
+  {
+    "model": "raterapi.rating",
+    "pk": 19,
+    "fields": { "player": 4, "game": 8, "rating": 7 }
+  },
+  {
+    "model": "raterapi.rating",
+    "pk": 20,
+    "fields": { "player": 5, "game": 8, "rating": 9 }
+  },
+
+  {
+    "model": "raterapi.rating",
+    "pk": 21,
+    "fields": { "player": 6, "game": 9, "rating": 8 }
+  },
+  {
+    "model": "raterapi.rating",
+    "pk": 22,
+    "fields": { "player": 1, "game": 9, "rating": 7 }
+  },
+
+  {
+    "model": "raterapi.rating",
+    "pk": 23,
+    "fields": { "player": 1, "game": 10, "rating": 6 }
+  },
+  {
+    "model": "raterapi.rating",
+    "pk": 24,
+    "fields": { "player": 6, "game": 10, "rating": 8 }
+  },
+
+  {
+    "model": "raterapi.rating",
+    "pk": 25,
+    "fields": { "player": 2, "game": 11, "rating": 9 }
+  },
+  {
+    "model": "raterapi.rating",
+    "pk": 26,
+    "fields": { "player": 3, "game": 11, "rating": 7 }
+  },
+
+  {
+    "model": "raterapi.rating",
+    "pk": 27,
+    "fields": { "player": 4, "game": 12, "rating": 6 }
+  },
+  {
+    "model": "raterapi.rating",
+    "pk": 28,
+    "fields": { "player": 5, "game": 12, "rating": 8 }
+  },
+
+  {
+    "model": "raterapi.rating",
+    "pk": 29,
+    "fields": { "player": 6, "game": 13, "rating": 7 }
+  },
+  {
+    "model": "raterapi.rating",
+    "pk": 30,
+    "fields": { "player": 4, "game": 13, "rating": 6 }
+  },
+
+  {
+    "model": "raterapi.rating",
+    "pk": 31,
+    "fields": { "player": 1, "game": 14, "rating": 8 }
+  },
+  {
+    "model": "raterapi.rating",
+    "pk": 32,
+    "fields": { "player": 2, "game": 14, "rating": 7 }
+  },
+
+  {
+    "model": "raterapi.rating",
+    "pk": 33,
+    "fields": { "player": 3, "game": 15, "rating": 9 }
+  },
+  {
+    "model": "raterapi.rating",
+    "pk": 34,
+    "fields": { "player": 4, "game": 15, "rating": 8 }
+  },
+
+  {
+    "model": "raterapi.rating",
+    "pk": 35,
+    "fields": { "player": 5, "game": 1, "rating": 6 }
+  },
+  {
+    "model": "raterapi.rating",
+    "pk": 36,
+    "fields": { "player": 6, "game": 9, "rating": 7 }
+  },
+  {
+    "model": "raterapi.rating",
+    "pk": 37,
+    "fields": { "player": 5, "game": 5, "rating": 8 }
+  }
+]
