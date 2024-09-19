@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 
 class Rating(models.Model):
     player = models.ForeignKey(User, on_delete=models.CASCADE)
-    game = models.ForeignKey("Game", on_delete=models.CASCADE)
+    game = models.ForeignKey("Game", on_delete=models.CASCADE, related_name="ratings")
     rating = models.IntegerField()
     created_at = models.DateTimeField(auto_now_add=True, null=True)
 

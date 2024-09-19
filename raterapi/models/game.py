@@ -16,3 +16,20 @@ class Game(models.Model):
     )
     created_at = models.DateTimeField(auto_now_add=True, null=True)
     updated_at = models.DateTimeField(auto_now=True, null=True)
+
+    @property
+    def average_rating(self):
+        """Calculate the average rating for the game."""
+        ratings = self.ratings.all()
+
+        # Check if there are ratings
+        if not ratings:
+            return 0
+
+        # Sum all the ratings for the game
+        total_rating = sum(rating.rating for rating in ratings)
+
+        # Calculate the average rating
+        average = total_rating / len(ratings)
+
+        return average
