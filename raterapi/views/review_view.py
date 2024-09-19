@@ -25,18 +25,6 @@ class ReviewSerializer(serializers.ModelSerializer):
         ]
 
 
-# class ReviewViewSet(viewsets.ModelViewSet):
-#     serializer_class = ReviewSerializer
-#     queryset = Review.objects.all().order_by("-created_at")
-
-#     def get_queryset(self):
-#         queryset = super().get_queryset()
-#         game_id = self.request.query_params.get("gameId")
-#         if game_id:
-#             queryset = queryset.filter(game_id=game_id)
-#         return queryset
-
-
 class ReviewViewSet(viewsets.ModelViewSet):
     serializer_class = ReviewSerializer
     queryset = Review.objects.all().order_by("-created_at")

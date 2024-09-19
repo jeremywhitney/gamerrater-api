@@ -20,10 +20,17 @@ class GameCategorySerializer(serializers.ModelSerializer):
 
 
 class GameSerializer(serializers.ModelSerializer):
-    """JSON serializer"""
-
     created_by = GameUserSerializer(read_only=True)
-    categories = GameCategorySerializer(many=True, read_only=True)
+    categories = serializers.PrimaryKeyRelatedField(
+        many=True,
+        queryset=Category.objects.all(),
+        write_only=True,  # This allows you to submit category IDs for updates
+    )
+    categories_detail = GameCategorySerializer(
+        source="categories",
+        many=True,
+        read_only=True,  # This returns the detailed category information
+    )
 
     class Meta:
         model = Game
@@ -37,7 +44,8 @@ class GameSerializer(serializers.ModelSerializer):
             "estimated_time_to_play",
             "age_recommendation",
             "created_by",
-            "categories",
+            "categories",  # For updates
+            "categories_detail",  # For reading detailed category info
         )
 
 
