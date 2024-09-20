@@ -23,7 +23,7 @@ class Game(models.Model):
         ratings = self.ratings.all()
 
         # Check if there are ratings
-        if not ratings:
+        if not ratings.exists():
             return 0
 
         # Sum all the ratings for the game
@@ -32,4 +32,5 @@ class Game(models.Model):
         # Calculate the average rating
         average = total_rating / len(ratings)
 
-        return average
+        # Return the average rounded to one decimal place
+        return round(average, 1)
