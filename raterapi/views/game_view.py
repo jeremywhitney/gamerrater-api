@@ -32,6 +32,7 @@ class GameSerializer(serializers.ModelSerializer):
         read_only=True,  # This returns the detailed category information
     )
     average_rating = serializers.ReadOnlyField()
+    image_url = serializers.URLField(required=False)
 
     class Meta:
         model = Game
@@ -48,6 +49,7 @@ class GameSerializer(serializers.ModelSerializer):
             "categories",  # For updates
             "categories_detail",  # For reading detailed category info
             "average_rating",
+            "image_url",
         )
 
 

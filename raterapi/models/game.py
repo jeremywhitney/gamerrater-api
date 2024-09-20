@@ -14,6 +14,7 @@ class Game(models.Model):
     categories = models.ManyToManyField(
         "Category", through="GameCategory", related_name="games"
     )
+    image_url = models.URLField(max_length=200, blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True, null=True)
     updated_at = models.DateTimeField(auto_now=True, null=True)
 
