@@ -27,7 +27,7 @@ def login_user(request):
     if authenticated_user is not None:
         token = Token.objects.get(user=authenticated_user)
 
-        data = {"valid": True, "token": token.key}
+        data = {"valid": True, "token": token.key, "user_id": token.user_id}
         return Response(data)
     else:
         # Bad login details were provided. So we can't log the user in.

@@ -31,6 +31,7 @@ class GameSerializer(serializers.ModelSerializer):
         many=True,
         read_only=True,  # This returns the detailed category information
     )
+    average_rating = serializers.ReadOnlyField()
 
     class Meta:
         model = Game
@@ -46,6 +47,7 @@ class GameSerializer(serializers.ModelSerializer):
             "created_by",
             "categories",  # For updates
             "categories_detail",  # For reading detailed category info
+            "average_rating",
         )
 
 
