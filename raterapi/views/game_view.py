@@ -1,7 +1,9 @@
 from rest_framework import serializers, viewsets
+from rest_framework.permissions import IsAuthenticated
+from rest_framework.response import Response
 from raterapi.models import Game, Category
 from django.contrib.auth.models import User
-from rest_framework.permissions import IsAuthenticated
+from django.db.models import Q
 
 
 class GameUserSerializer(serializers.ModelSerializer):
@@ -66,3 +68,15 @@ class GameViewSet(viewsets.ModelViewSet):
         if categories:
             game.categories.set(categories)
             game.save()
+
+    def list(self, request):
+        search_text = self.request.query_params.get("q", None)
+        queryset = self.queryset
+        if search_text is not None:
+            queryset = queryset.filter(
+                Q(title__icontains=search_text)
+                | Q(description__icontains=search_text)
+                | Q(designer__icontains=search_text)
+            )
+        serializer = self.get_serializer(queryset, many=True)
+        return Response(serializer.data)
